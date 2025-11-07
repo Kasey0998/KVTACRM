@@ -101,6 +101,16 @@
         const username = document.getelementbyId("username").value.trim();
         const password = document.getelementbyId("password").value.trim();
         const errorMsg = document.getelementbyId("errorMsg");
+
+        if (username === "admin" and password === "admin123") {
+        alert("Login successful!");
+        window.location.href = "admin-dashboard.html";
+        return false;
+      } else {
+        errorMsg.style.display = "Login deatils0 are not valid";
+        return false;
+      }
+    }
       
     </script>
   </body>
